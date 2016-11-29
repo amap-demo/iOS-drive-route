@@ -15,6 +15,6 @@ iOS驾车路线规划（带实时路况）demo
 
 ### demo运行效果图
 
-![Screenshot](./ScreenShots/screenshot0.png)
-![Screenshot](./ScreenShots/screenshot1.png)
-![Screenshot](./ScreenShots/screenshot2.png)
+![Screenshot](./ScreenShots/screenshot0.jpeg)
+![Screenshot](./ScreenShots/screenshot1.jpeg)
+![Screenshot](./ScreenShots/screenshot2.jpeg)
