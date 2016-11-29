@@ -130,7 +130,7 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
 }
 
 //路径规划搜索完成回调.
-- (void)onRouteSearchDone:(AMapRouteSearchBaseRequest *)request response:(AMapRouteSearchResponse *)response{
+- (void)onRouteSearchDone:(AMapRouteSearchBaseRequest *)request response:(AMapRouteSearchResponse *)response {
     
     if (response.route == nil){
         [self resetSearchResultAndXibViewsToDefault];
@@ -160,13 +160,14 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
     
     MANaviAnnotationType type = MANaviAnnotationTypeDrive; //驾车类型
     
-    AMapGeoPoint *startPoint = [AMapGeoPoint locationWithLatitude:self.startAnnotation.coordinate.latitude longitude:self.startAnnotation.coordinate.longitude];
+    AMapGeoPoint *startPoint = [AMapGeoPoint locationWithLatitude:self.startAnnotation.coordinate.latitude longitude:self.startAnnotation.coordinate.longitude]; //起点
     
-    AMapGeoPoint *endPoint = [AMapGeoPoint locationWithLatitude:self.destinationAnnotation.coordinate.latitude longitude:self.destinationAnnotation.coordinate.longitude];
+    AMapGeoPoint *endPoint = [AMapGeoPoint locationWithLatitude:self.destinationAnnotation.coordinate.latitude longitude:self.destinationAnnotation.coordinate.longitude];  //终点
     
+    //根据已经规划的路径，起点，终点，规划类型，是否显示实时路况，生成显示方案
     self.naviRoute = [MANaviRoute naviRouteForPath:self.route.paths[self.currentRouteIndex] withNaviType:type showTraffic:self.showTrafficSwitch.on startPoint:startPoint endPoint:endPoint];
     
-    [self.naviRoute addToMapView:self.mapView];
+    [self.naviRoute addToMapView:self.mapView];  //显示到地图上
     
     UIEdgeInsets edgePaddingRect = UIEdgeInsetsMake(RoutePlanningPaddingEdge, RoutePlanningPaddingEdge, RoutePlanningPaddingEdge, RoutePlanningPaddingEdge); 
     
@@ -223,7 +224,7 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
     return nil;
 }
 
-//地图上的起始点，终点，拐点的标注，可以自定义图片展示等
+//地图上的起始点，终点，拐点的标注，可以自定义图标展示等
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
 {
     if ([annotation isKindOfClass:[MAPointAnnotation class]]){
