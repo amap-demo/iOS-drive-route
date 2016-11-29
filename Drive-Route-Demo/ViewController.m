@@ -84,6 +84,7 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
     self.currentRouteIndex = 0;
     self.switchRouteBtn.enabled = self.routeDetailBtn.enabled = self.showTrafficSwitch.enabled = NO;
     self.infoLabel.text = @"";
+    [self.naviRoute removeFromMapView]; 
 }
 
 //在地图上添加起始和终点的标注点
