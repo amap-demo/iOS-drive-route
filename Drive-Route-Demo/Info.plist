@@ -6,6 +6,13 @@
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Resources/Images/icon/icon.png</string>
+		<string>Resources/Images/icon/icon@2x.png</string>
+		<string>Resources/Images/icon/icon-72.png</string>
+		<string>Resources/Images/icon/icon-72@2x.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
