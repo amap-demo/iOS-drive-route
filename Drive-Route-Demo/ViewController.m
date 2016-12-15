@@ -62,7 +62,7 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
 }
 
 //初始化地图,和搜索API
--(void)initMapViewAndSearch{
+- (void)initMapViewAndSearch {
     self.mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 45 - 64)];
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.mapView.delegate = self;
@@ -73,21 +73,22 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
 }
 
 //初始化坐标数据
--(void)setUpData{
+- (void)setUpData {
     self.startCoordinate = CLLocationCoordinate2DMake(39.910267, 116.370888);
     self.destinationCoordinate = CLLocationCoordinate2DMake(39.989872, 116.481956);
 }
 
 //初始化或者规划失败后，设置view和数据为默认值
--(void)resetSearchResultAndXibViewsToDefault{
+- (void)resetSearchResultAndXibViewsToDefault {
     self.totalRouteNums = 0;
     self.currentRouteIndex = 0;
     self.switchRouteBtn.enabled = self.routeDetailBtn.enabled = self.showTrafficSwitch.enabled = NO;
     self.infoLabel.text = @"";
+    [self.naviRoute removeFromMapView]; 
 }
 
 //在地图上添加起始和终点的标注点
--(void)addDefaultAnnotations{
+- (void)addDefaultAnnotations {
     MAPointAnnotation *startAnnotation = [[MAPointAnnotation alloc] init];
     startAnnotation.coordinate = self.startCoordinate;
     startAnnotation.title = (NSString *)RoutePlanningViewControllerStartTitle;
@@ -105,7 +106,7 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
 }
 
 //驾车路线开始规划
-- (void)searchRoutePlanningDrive{
+- (void)searchRoutePlanningDrive {
     
     AMapDrivingRouteSearchRequest *navi = [[AMapDrivingRouteSearchRequest alloc] init];
     navi.requireExtension = YES;
@@ -124,7 +125,7 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
 #pragma mark - AMapSearchDelegate
 
 //当路径规划搜索请求发生错误时，会调用代理的此方法
-- (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error{
+- (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error {
     NSLog(@"Error: %@", error);
     [self resetSearchResultAndXibViewsToDefault];
 }
@@ -148,7 +149,7 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
 }
 
 //在地图上显示当前选择的路径
-- (void)presentCurrentRouteCourse{
+- (void)presentCurrentRouteCourse {
     
     if (self.totalRouteNums <= 0) {
         return;
@@ -180,10 +181,10 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
 #pragma mark - MAMapViewDelegate
 
 //地图上覆盖物的渲染，可以设置路径线路的宽度，颜色等
-- (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id<MAOverlay>)overlay
-{
+- (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id<MAOverlay>)overlay {
+    
     //虚线，如需要步行的
-    if ([overlay isKindOfClass:[LineDashPolyline class]]){
+    if ([overlay isKindOfClass:[LineDashPolyline class]]) {
         MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:((LineDashPolyline *)overlay).polyline];
         polylineRenderer.lineWidth = 6;
         polylineRenderer.lineDash = YES;
@@ -193,17 +194,17 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
     }
     
     //showTraffic为NO时，不需要带实时路况，路径为单一颜色，比如驾车线路目前为blueColor
-    if ([overlay isKindOfClass:[MANaviPolyline class]]){
+    if ([overlay isKindOfClass:[MANaviPolyline class]]) {
         MANaviPolyline *naviPolyline = (MANaviPolyline *)overlay;
         MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:naviPolyline.polyline];
         
         polylineRenderer.lineWidth = 6;
         
-        if (naviPolyline.type == MANaviAnnotationTypeWalking){
+        if (naviPolyline.type == MANaviAnnotationTypeWalking) {
             polylineRenderer.strokeColor = self.naviRoute.walkingColor;
-        }else if (naviPolyline.type == MANaviAnnotationTypeRailway){
+        } else if (naviPolyline.type == MANaviAnnotationTypeRailway) {
             polylineRenderer.strokeColor = self.naviRoute.railwayColor;
-        }else{
+        } else {
             polylineRenderer.strokeColor = self.naviRoute.routeColor;
         }
         
@@ -211,12 +212,11 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
     }
     
     //showTraffic为YES时，需要带实时路况，路径为多颜色渐变
-    if ([overlay isKindOfClass:[MAMultiPolyline class]]){
+    if ([overlay isKindOfClass:[MAMultiPolyline class]]) {
         MAMultiColoredPolylineRenderer * polylineRenderer = [[MAMultiColoredPolylineRenderer alloc] initWithMultiPolyline:overlay];
         
         polylineRenderer.lineWidth = 6;
         polylineRenderer.strokeColors = [self.naviRoute.multiPolylineColors copy];
-        polylineRenderer.gradient = YES;
         
         return polylineRenderer;
     }
@@ -224,17 +224,16 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
     return nil;
 }
 
-//地图上的起始点，终点，拐点的标注，可以自定义图标展示等
-- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
-{
-    if ([annotation isKindOfClass:[MAPointAnnotation class]]){
+//地图上的起始点，终点，拐点的标注，可以自定义图标展示等,只要有标注点需要显示，该回调就会被调用
+- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation {
+    if ([annotation isKindOfClass:[MAPointAnnotation class]]) {
         
         //标注的view的初始化和复用
         static NSString *routePlanningCellIdentifier = @"RoutePlanningCellIdentifier";
         
         MAAnnotationView *poiAnnotationView = (MAAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:routePlanningCellIdentifier];
         
-        if (poiAnnotationView == nil){
+        if (poiAnnotationView == nil) {
             poiAnnotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:routePlanningCellIdentifier];
         }
         
@@ -242,8 +241,8 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
         poiAnnotationView.image = nil;
         
         //拐点的图标标注
-        if ([annotation isKindOfClass:[MANaviAnnotation class]]){
-            switch (((MANaviAnnotation*)annotation).type){
+        if ([annotation isKindOfClass:[MANaviAnnotation class]]) {
+            switch (((MANaviAnnotation*)annotation).type) {
                 case MANaviAnnotationTypeRailway:
                     poiAnnotationView.image = [UIImage imageNamed:@"railway_station"];
                     break;
@@ -265,7 +264,7 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
             }
         }else{
             //起点，终点的图标标注
-            if ([[annotation title] isEqualToString:(NSString*)RoutePlanningViewControllerStartTitle]){
+            if ([[annotation title] isEqualToString:(NSString*)RoutePlanningViewControllerStartTitle]) {
                 poiAnnotationView.image = [UIImage imageNamed:@"startPoint"];  //起点
             }else if([[annotation title] isEqualToString:(NSString*)RoutePlanningViewControllerDestinationTitle]){
                 poiAnnotationView.image = [UIImage imageNamed:@"endPoint"];  //终点

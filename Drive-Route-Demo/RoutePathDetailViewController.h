@@ -13,6 +13,6 @@
 @interface RoutePathDetailViewController : UIViewController
 
 @property (strong, nonatomic) AMapRoute *route;
-@property (nonatomic, strong) AMapPath *path;
+@property (strong, nonatomic) AMapPath *path;
 
 @end
