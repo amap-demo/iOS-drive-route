@@ -101,6 +101,11 @@
 		D93399021DE86210005EFBEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93399001DE86210005EFBEB /* Main.storyboard */; };
 		D93399041DE86210005EFBEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93399031DE86210005EFBEB /* Assets.xcassets */; };
 		D93399071DE86210005EFBEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93399051DE86210005EFBEB /* LaunchScreen.storyboard */; };
+		D9E53D401E09395A00635107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E53D3F1E09395A00635107 /* AppDelegate.swift */; };
+		D9E53D421E09395A00635107 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E53D411E09395A00635107 /* ViewController.swift */; };
+		D9E53D451E09395A00635107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E53D431E09395A00635107 /* Main.storyboard */; };
+		D9E53D471E09395A00635107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E53D461E09395A00635107 /* Assets.xcassets */; };
+		D9E53D4A1E09395A00635107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E53D481E09395A00635107 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -212,6 +217,13 @@
 		D93399061DE86210005EFBEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D93399081DE86210005EFBEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D933990E1DE8641D005EFBEB /* APIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		D9E53D3D1E09395A00635107 /* Drive-Route-Demo-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drive-Route-Demo-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E53D3F1E09395A00635107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9E53D411E09395A00635107 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9E53D441E09395A00635107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9E53D461E09395A00635107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9E53D491E09395A00635107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9E53D4B1E09395A00635107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +232,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				793F596817D089C410EE0AAE /* libPods-Drive-Route-Demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E53D3A1E09395A00635107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				D93398F61DE86210005EFBEB /* Drive-Route-Demo */,
+				D9E53D3E1E09395A00635107 /* Drive-Route-Demo-swift */,
 				D93398F51DE86210005EFBEB /* Products */,
 				D923A5611DED1FA300EA75E9 /* ScreenShots */,
 				F49FEE8046A26E44821AAF2D /* Frameworks */,
@@ -381,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				D93398F41DE86210005EFBEB /* Drive-Route-Demo.app */,
+				D9E53D3D1E09395A00635107 /* Drive-Route-Demo-swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -417,6 +438,19 @@
 				D93398F81DE86210005EFBEB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9E53D3E1E09395A00635107 /* Drive-Route-Demo-swift */ = {
+			isa = PBXGroup;
+			children = (
+				D9E53D3F1E09395A00635107 /* AppDelegate.swift */,
+				D9E53D411E09395A00635107 /* ViewController.swift */,
+				D9E53D431E09395A00635107 /* Main.storyboard */,
+				D9E53D461E09395A00635107 /* Assets.xcassets */,
+				D9E53D481E09395A00635107 /* LaunchScreen.storyboard */,
+				D9E53D4B1E09395A00635107 /* Info.plist */,
+			);
+			path = "Drive-Route-Demo-swift";
 			sourceTree = "<group>";
 		};
 		F3C4BE3424CF3C53A608EC44 /* Pods */ = {
@@ -459,17 +493,40 @@
 			productReference = D93398F41DE86210005EFBEB /* Drive-Route-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D9E53D3C1E09395A00635107 /* Drive-Route-Demo-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9E53D4C1E09395A00635107 /* Build configuration list for PBXNativeTarget "Drive-Route-Demo-swift" */;
+			buildPhases = (
+				D9E53D391E09395A00635107 /* Sources */,
+				D9E53D3A1E09395A00635107 /* Frameworks */,
+				D9E53D3B1E09395A00635107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Drive-Route-Demo-swift";
+			productName = "Drive-Route-Demo-swift";
+			productReference = D9E53D3D1E09395A00635107 /* Drive-Route-Demo-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D93398EC1DE86210005EFBEB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = autonavi;
 				TargetAttributes = {
 					D93398F31DE86210005EFBEB = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+					};
+					D9E53D3C1E09395A00635107 = {
+						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = YMJ372W38W;
 						ProvisioningStyle = Manual;
 					};
@@ -489,6 +546,7 @@
 			projectRoot = "";
 			targets = (
 				D93398F31DE86210005EFBEB /* Drive-Route-Demo */,
+				D9E53D3C1E09395A00635107 /* Drive-Route-Demo-swift */,
 			);
 		};
 /* End PBXProject section */
@@ -584,6 +642,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9E53D3B1E09395A00635107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E53D4A1E09395A00635107 /* LaunchScreen.storyboard in Resources */,
+				D9E53D471E09395A00635107 /* Assets.xcassets in Resources */,
+				D9E53D451E09395A00635107 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -652,6 +720,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9E53D391E09395A00635107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E53D421E09395A00635107 /* ViewController.swift in Sources */,
+				D9E53D401E09395A00635107 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -667,6 +744,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				D93399061DE86210005EFBEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D9E53D431E09395A00635107 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9E53D441E09395A00635107 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9E53D481E09395A00635107 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9E53D491E09395A00635107 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -783,14 +876,53 @@
 			baseConfigurationReference = D8BDD9E8B6FE7A9134F9364F /* Pods-Drive-Route-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = YMJ372W38W;
 				INFOPLIST_FILE = "Drive-Route-Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.Drive-Route-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d723e77c-6c92-4e6a-98d7-8717d0b88b87";
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+			};
+			name = Release;
+		};
+		D9E53D4D1E09395A00635107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "Drive-Route-Demo-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.Drive-Route-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
 				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D9E53D4E1E09395A00635107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "Drive-Route-Demo-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.Drive-Route-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -814,6 +946,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D9E53D4C1E09395A00635107 /* Build configuration list for PBXNativeTarget "Drive-Route-Demo-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9E53D4D1E09395A00635107 /* Debug */,
+				D9E53D4E1E09395A00635107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
