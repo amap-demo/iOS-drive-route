@@ -77,6 +77,7 @@ class RootViewController: UIViewController, MAMapViewDelegate, AMapSearchDelegat
         self.naviRoute?.removeFromMapView()
         
     }
+    
     //在地图上添加起始和终点的标注点
     func addDefaultAnnotations() {
         let startAnnotation = MAPointAnnotation()
@@ -106,6 +107,31 @@ class RootViewController: UIViewController, MAMapViewDelegate, AMapSearchDelegat
         self.search.aMapDrivingRouteSearch(navi)
     }
     
+    //在地图上显示当前选择的路径
+    func presentCurrentRouteCourse() {
+        if self.totalRouteNums <= 0 {
+            return
+        }
+        self.naviRoute?.removeFromMapView() //清空地图上已有的路线
+        
+        self.infoLabel.text = "共\(UInt(self.totalRouteNums))条路线，当前显示第\(UInt(self.currentRouteIndex) + 1)条"  //提示信息
+        
+        let type = MANaviAnnotationType.drive //驾车类型
+        
+        let startPoint = AMapGeoPoint.location(withLatitude: CGFloat(self.startAnnotation.coordinate.latitude), longitude: CGFloat(self.startAnnotation.coordinate.longitude)) //起点
+        
+        let endPoint = AMapGeoPoint.location(withLatitude: CGFloat(self.destinationAnnotation.coordinate.latitude), longitude: CGFloat(self.destinationAnnotation.coordinate.longitude))  //终点
+        
+        //根据已经规划的路径，起点，终点，规划类型，是否显示实时路况，生成显示方案
+        self.naviRoute = MANaviRoute(for: self.route.paths[self.currentRouteIndex], withNaviType: type, showTraffic: self.showTrafficSwitch.isOn, start: startPoint, end: endPoint)
+        self.naviRoute?.add(to: self.mapView)
+        
+        //显示到地图上
+        let edgePaddingRect = UIEdgeInsetsMake(RoutePlanningPaddingEdge, RoutePlanningPaddingEdge, RoutePlanningPaddingEdge, RoutePlanningPaddingEdge)
+        //缩放地图使其适应polylines的展示
+        self.mapView.setVisibleMapRect(CommonUtility.mapRect(forOverlays: self.naviRoute?.routePolylines), edgePadding: edgePaddingRect, animated: true)
+    }
+    
     
     // MARK: - AMapSearchDelegate
     
@@ -131,31 +157,8 @@ class RootViewController: UIViewController, MAMapViewDelegate, AMapSearchDelegat
         self.infoLabel.text = ""
         self.presentCurrentRouteCourse()
     }
-    //在地图上显示当前选择的路径
     
-    func presentCurrentRouteCourse() {
-        if self.totalRouteNums <= 0 {
-            return
-        }
-        self.naviRoute?.removeFromMapView() //清空地图上已有的路线
-        
-        self.infoLabel.text = "共\(UInt(self.totalRouteNums))条路线，当前显示第\(UInt(self.currentRouteIndex) + 1)条"  //提示信息
-        
-        let type = MANaviAnnotationType.drive //驾车类型
-        
-        let startPoint = AMapGeoPoint.location(withLatitude: CGFloat(self.startAnnotation.coordinate.latitude), longitude: CGFloat(self.startAnnotation.coordinate.longitude)) //起点
-        
-        let endPoint = AMapGeoPoint.location(withLatitude: CGFloat(self.destinationAnnotation.coordinate.latitude), longitude: CGFloat(self.destinationAnnotation.coordinate.longitude))  //终点
-        
-        //根据已经规划的路径，起点，终点，规划类型，是否显示实时路况，生成显示方案
-        self.naviRoute = MANaviRoute(for: self.route.paths[self.currentRouteIndex], withNaviType: type, showTraffic: self.showTrafficSwitch.isOn, start: startPoint, end: endPoint)
-        self.naviRoute?.add(to: self.mapView)
-        
-        //显示到地图上
-        let edgePaddingRect = UIEdgeInsetsMake(RoutePlanningPaddingEdge, RoutePlanningPaddingEdge, RoutePlanningPaddingEdge, RoutePlanningPaddingEdge)
-        //缩放地图使其适应polylines的展示
-        self.mapView.setVisibleMapRect(CommonUtility.mapRect(forOverlays: self.naviRoute?.routePolylines), edgePadding: edgePaddingRect, animated: true)
-    }
+    // MARK: - MAMapViewDelegate
     
     func mapView(_ mapView: MAMapView!, rendererFor overlay: MAOverlay!) -> MAOverlayRenderer! {
         
