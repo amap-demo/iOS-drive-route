@@ -12,7 +12,12 @@
 		<key>Drive-Route-Demo-swift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>3</integer>
+		</dict>
+		<key>Drive-Route-Demo-swift2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>Drive-Route-Demo.xcscheme</key>
 		<dict>
@@ -28,6 +33,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>D93398F31DE86210005EFBEB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D93FC5191E0ACAAD00A61D8F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

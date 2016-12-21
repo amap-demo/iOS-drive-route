@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F11D2A069BC6ABC85984018 /* libPods-Drive-Route-Demo-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF3331AC79BE67C965338FB /* libPods-Drive-Route-Demo-swift.a */; };
 		793F596817D089C410EE0AAE /* libPods-Drive-Route-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F79F8BF740FB821C38BFB29 /* libPods-Drive-Route-Demo.a */; };
 		D9239EDB1DEBE01700EA75E9 /* LineDashPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = D9239ED41DEBE01700EA75E9 /* LineDashPolyline.m */; };
 		D9239EDC1DEBE01700EA75E9 /* MANaviAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D9239ED61DEBE01700EA75E9 /* MANaviAnnotation.m */; };
@@ -101,16 +102,99 @@
 		D93399021DE86210005EFBEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93399001DE86210005EFBEB /* Main.storyboard */; };
 		D93399041DE86210005EFBEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93399031DE86210005EFBEB /* Assets.xcassets */; };
 		D93399071DE86210005EFBEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93399051DE86210005EFBEB /* LaunchScreen.storyboard */; };
+		D93FC5151E0AABE200A61D8F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FC5141E0AABE200A61D8F /* RootViewController.swift */; };
+		D93FC5321E0AD46600A61D8F /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5591DED190A00EA75E9 /* icon-72.png */; };
+		D93FC5331E0AD46600A61D8F /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A55A1DED190A00EA75E9 /* icon-72@2x.png */; };
+		D93FC5341E0AD46600A61D8F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A55B1DED190A00EA75E9 /* icon.png */; };
+		D93FC5351E0AD46600A61D8F /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A55C1DED190A00EA75E9 /* icon@2x.png */; };
+		D93FC5361E0AD46600A61D8F /* busRoute@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5101DEC502D00EA75E9 /* busRoute@2x.png */; };
+		D93FC5371E0AD46600A61D8F /* busRoute@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5111DEC502D00EA75E9 /* busRoute@3x.png */; };
+		D93FC5381E0AD46600A61D8F /* dottedStraight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5121DEC502D00EA75E9 /* dottedStraight@2x.png */; };
+		D93FC5391E0AD46600A61D8F /* dottedStraight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5131DEC502D00EA75E9 /* dottedStraight@3x.png */; };
+		D93FC53A1E0AD46600A61D8F /* downStairs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5141DEC502D00EA75E9 /* downStairs@2x.png */; };
+		D93FC53B1E0AD46600A61D8F /* downStairs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5151DEC502D00EA75E9 /* downStairs@3x.png */; };
+		D93FC53C1E0AD46600A61D8F /* end@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5161DEC502D00EA75E9 /* end@2x.png */; };
+		D93FC53D1E0AD46600A61D8F /* end@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5171DEC502D00EA75E9 /* end@3x.png */; };
+		D93FC53E1E0AD46600A61D8F /* left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5181DEC502D00EA75E9 /* left@2x.png */; };
+		D93FC53F1E0AD46600A61D8F /* left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5191DEC502D00EA75E9 /* left@3x.png */; };
+		D93FC5401E0AD46600A61D8F /* leftFront@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A51A1DEC502D00EA75E9 /* leftFront@2x.png */; };
+		D93FC5411E0AD46600A61D8F /* leftFront@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A51B1DEC502D00EA75E9 /* leftFront@3x.png */; };
+		D93FC5421E0AD46600A61D8F /* leftRear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A51C1DEC502D00EA75E9 /* leftRear@2x.png */; };
+		D93FC5431E0AD46600A61D8F /* leftRear@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A51D1DEC502D00EA75E9 /* leftRear@3x.png */; };
+		D93FC5441E0AD46600A61D8F /* lift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A51E1DEC502D00EA75E9 /* lift@2x.png */; };
+		D93FC5451E0AD46600A61D8F /* lift@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A51F1DEC502D00EA75E9 /* lift@3x.png */; };
+		D93FC5461E0AD46600A61D8F /* pavement@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5201DEC502D00EA75E9 /* pavement@2x.png */; };
+		D93FC5471E0AD46600A61D8F /* pavement@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5211DEC502D00EA75E9 /* pavement@3x.png */; };
+		D93FC5481E0AD46600A61D8F /* point@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5221DEC502D00EA75E9 /* point@2x.png */; };
+		D93FC5491E0AD46600A61D8F /* point@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5231DEC502D00EA75E9 /* point@3x.png */; };
+		D93FC54A1E0AD46600A61D8F /* right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5241DEC502D00EA75E9 /* right@2x.png */; };
+		D93FC54B1E0AD46600A61D8F /* right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5251DEC502D00EA75E9 /* right@3x.png */; };
+		D93FC54C1E0AD46600A61D8F /* rightFront@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5261DEC502D00EA75E9 /* rightFront@2x.png */; };
+		D93FC54D1E0AD46600A61D8F /* rightFront@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5271DEC502D00EA75E9 /* rightFront@3x.png */; };
+		D93FC54E1E0AD46600A61D8F /* rightRear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5281DEC502D00EA75E9 /* rightRear@2x.png */; };
+		D93FC54F1E0AD46600A61D8F /* rightRear@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5291DEC502D00EA75E9 /* rightRear@3x.png */; };
+		D93FC5501E0AD46600A61D8F /* start@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A52A1DEC502D00EA75E9 /* start@2x.png */; };
+		D93FC5511E0AD46600A61D8F /* start@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A52B1DEC502D00EA75E9 /* start@3x.png */; };
+		D93FC5521E0AD46600A61D8F /* straight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A52C1DEC502D00EA75E9 /* straight@2x.png */; };
+		D93FC5531E0AD46600A61D8F /* straight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A52D1DEC502D00EA75E9 /* straight@3x.png */; };
+		D93FC5541E0AD46600A61D8F /* underGround@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A52E1DEC502D00EA75E9 /* underGround@2x.png */; };
+		D93FC5551E0AD46600A61D8F /* underGround@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A52F1DEC502D00EA75E9 /* underGround@3x.png */; };
+		D93FC5561E0AD46600A61D8F /* upStairs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5301DEC502D00EA75E9 /* upStairs@2x.png */; };
+		D93FC5571E0AD46600A61D8F /* upStairs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5311DEC502D00EA75E9 /* upStairs@3x.png */; };
+		D93FC5581E0AD46600A61D8F /* walkRoute@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5321DEC502D00EA75E9 /* walkRoute@2x.png */; };
+		D93FC5591E0AD46600A61D8F /* walkRoute@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A5331DEC502D00EA75E9 /* walkRoute@3x.png */; };
+		D93FC55A1E0AD46600A61D8F /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1EB1DEBE89400EA75E9 /* arrow_right.png */; };
+		D93FC55B1E0AD46600A61D8F /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1EC1DEBE89400EA75E9 /* arrow_right@2x.png */; };
+		D93FC55C1E0AD46600A61D8F /* public_button_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A4DE1DEC169D00EA75E9 /* public_button_back@2x.png */; };
+		D93FC55D1E0AD46600A61D8F /* public_button_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A4DF1DEC169D00EA75E9 /* public_button_back@3x.png */; };
+		D93FC55E1E0AD46600A61D8F /* arrowTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1ED1DEBE89400EA75E9 /* arrowTexture.png */; };
+		D93FC55F1E0AD46600A61D8F /* bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1EE1DEBE89400EA75E9 /* bus@2x.png */; };
+		D93FC5601E0AD46600A61D8F /* car@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1EF1DEBE89400EA75E9 /* car@2x.png */; };
+		D93FC5611E0AD46600A61D8F /* compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1F01DEBE89400EA75E9 /* compass@2x.png */; };
+		D93FC5621E0AD46600A61D8F /* custtexture.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1F11DEBE89400EA75E9 /* custtexture.png */; };
+		D93FC5631E0AD46600A61D8F /* custtexture_bad.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1F21DEBE89400EA75E9 /* custtexture_bad.png */; };
+		D93FC5641E0AD46600A61D8F /* custtexture_green.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1F31DEBE89400EA75E9 /* custtexture_green.png */; };
+		D93FC5651E0AD46600A61D8F /* custtexture_slow.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1F41DEBE89400EA75E9 /* custtexture_slow.png */; };
+		D93FC5661E0AD46600A61D8F /* decrease@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1F51DEBE89400EA75E9 /* decrease@2x.png */; };
+		D93FC5671E0AD46600A61D8F /* delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1F61DEBE89400EA75E9 /* delete@3x.png */; };
+		D93FC5681E0AD46600A61D8F /* download@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1F71DEBE89400EA75E9 /* download@3x.png */; };
+		D93FC5691E0AD46600A61D8F /* endPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1F81DEBE89400EA75E9 /* endPoint.png */; };
+		D93FC56A1E0AD46600A61D8F /* endPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1F91DEBE89400EA75E9 /* endPoint@2x.png */; };
+		D93FC56B1E0AD46600A61D8F /* gpsStat1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1FA1DEBE89400EA75E9 /* gpsStat1@2x.png */; };
+		D93FC56C1E0AD46600A61D8F /* gpsStat2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1FB1DEBE89400EA75E9 /* gpsStat2@2x.png */; };
+		D93FC56D1E0AD46600A61D8F /* GWF.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1FC1DEBE89400EA75E9 /* GWF.png */; };
+		D93FC56E1E0AD46600A61D8F /* hema.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1FD1DEBE89400EA75E9 /* hema.png */; };
+		D93FC56F1E0AD46600A61D8F /* increase@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A1FE1DEBE89400EA75E9 /* increase@2x.png */; };
+		D93FC5701E0AD46600A61D8F /* locate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A3531DEBE89400EA75E9 /* locate@2x.png */; };
+		D93FC5711E0AD46600A61D8F /* man@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A3541DEBE89400EA75E9 /* man@2x.png */; };
+		D93FC5721E0AD46600A61D8F /* navi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A3551DEBE89400EA75E9 /* navi@2x.png */; };
+		D93FC5731E0AD46600A61D8F /* naviBackgroundHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A3561DEBE89400EA75E9 /* naviBackgroundHighlighted.png */; };
+		D93FC5741E0AD46600A61D8F /* naviBackgroundNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A3571DEBE89400EA75E9 /* naviBackgroundNormal.png */; };
+		D93FC5751E0AD46600A61D8F /* pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A3581DEBE89400EA75E9 /* pause@3x.png */; };
+		D93FC5761E0AD46600A61D8F /* railway_station@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A3591DEBE89400EA75E9 /* railway_station@2x.png */; };
+		D93FC5771E0AD46600A61D8F /* ride@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A35A1DEBE89400EA75E9 /* ride@2x.png */; };
+		D93FC5781E0AD46600A61D8F /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A35B1DEBE89400EA75E9 /* search@2x.png */; };
+		D93FC5791E0AD46600A61D8F /* startPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A35C1DEBE89400EA75E9 /* startPoint.png */; };
+		D93FC57A1E0AD46600A61D8F /* startPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A35D1DEBE89400EA75E9 /* startPoint@2x.png */; };
+		D93FC57B1E0AD46600A61D8F /* userPosition.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A35E1DEBE89400EA75E9 /* userPosition.png */; };
+		D93FC57C1E0AD46600A61D8F /* userPosition@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A35F1DEBE89400EA75E9 /* userPosition@2x.png */; };
 		D9E53D401E09395A00635107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E53D3F1E09395A00635107 /* AppDelegate.swift */; };
-		D9E53D421E09395A00635107 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E53D411E09395A00635107 /* ViewController.swift */; };
 		D9E53D451E09395A00635107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E53D431E09395A00635107 /* Main.storyboard */; };
 		D9E53D471E09395A00635107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E53D461E09395A00635107 /* Assets.xcassets */; };
 		D9E53D4A1E09395A00635107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E53D481E09395A00635107 /* LaunchScreen.storyboard */; };
+		D9F282271E0AA2C400288CEA /* MANaviRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = D9239EDA1DEBE01700EA75E9 /* MANaviRoute.m */; };
+		D9F282281E0AA2C400288CEA /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D9239EE11DEBE0AB00EA75E9 /* CommonUtility.m */; };
+		D9F282291E0AA30200288CEA /* LineDashPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = D9239ED41DEBE01700EA75E9 /* LineDashPolyline.m */; };
+		D9F2822A1E0AA30200288CEA /* MANaviAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D9239ED61DEBE01700EA75E9 /* MANaviAnnotation.m */; };
+		D9F2822B1E0AA30200288CEA /* MANaviPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = D9239ED81DEBE01700EA75E9 /* MANaviPolyline.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5196091B92BBDA9E9E200FF6 /* libPods-Drive-Route-Demo-swift2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drive-Route-Demo-swift2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F79F8BF740FB821C38BFB29 /* libPods-Drive-Route-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drive-Route-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8655CF55D8948F5D0655B6C4 /* Pods-Drive-Route-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo/Pods-Drive-Route-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		8AF3331AC79BE67C965338FB /* libPods-Drive-Route-Demo-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drive-Route-Demo-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C741EF3B1D7F53B8A342C3A5 /* Pods-Drive-Route-Demo-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo-swift/Pods-Drive-Route-Demo-swift.release.xcconfig"; sourceTree = "<group>"; };
 		D8BDD9E8B6FE7A9134F9364F /* Pods-Drive-Route-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo/Pods-Drive-Route-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		D9239ED31DEBE01700EA75E9 /* LineDashPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineDashPolyline.h; sourceTree = "<group>"; };
 		D9239ED41DEBE01700EA75E9 /* LineDashPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineDashPolyline.m; sourceTree = "<group>"; };
@@ -217,13 +301,17 @@
 		D93399061DE86210005EFBEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D93399081DE86210005EFBEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D933990E1DE8641D005EFBEB /* APIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		D93FC5141E0AABE200A61D8F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		D9E53D3D1E09395A00635107 /* Drive-Route-Demo-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drive-Route-Demo-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E53D3F1E09395A00635107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9E53D411E09395A00635107 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D9E53D441E09395A00635107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9E53D461E09395A00635107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9E53D491E09395A00635107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9E53D4B1E09395A00635107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F282211E0A73F300288CEA /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		E70F30D7FC1699297B802B4C /* Pods-Drive-Route-Demo-swift2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo-swift2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo-swift2/Pods-Drive-Route-Demo-swift2.debug.xcconfig"; sourceTree = "<group>"; };
+		EDEB2030798B72705E47EAF5 /* Pods-Drive-Route-Demo-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo-swift/Pods-Drive-Route-Demo-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		F54347D76D2B40D12C691A04 /* Pods-Drive-Route-Demo-swift2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo-swift2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo-swift2/Pods-Drive-Route-Demo-swift2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +327,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F11D2A069BC6ABC85984018 /* libPods-Drive-Route-Demo-swift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +533,8 @@
 			isa = PBXGroup;
 			children = (
 				D9E53D3F1E09395A00635107 /* AppDelegate.swift */,
-				D9E53D411E09395A00635107 /* ViewController.swift */,
+				D93FC5141E0AABE200A61D8F /* RootViewController.swift */,
+				D9F282211E0A73F300288CEA /* Swift-Bridging-Header.h */,
 				D9E53D431E09395A00635107 /* Main.storyboard */,
 				D9E53D461E09395A00635107 /* Assets.xcassets */,
 				D9E53D481E09395A00635107 /* LaunchScreen.storyboard */,
@@ -458,6 +548,10 @@
 			children = (
 				8655CF55D8948F5D0655B6C4 /* Pods-Drive-Route-Demo.debug.xcconfig */,
 				D8BDD9E8B6FE7A9134F9364F /* Pods-Drive-Route-Demo.release.xcconfig */,
+				E70F30D7FC1699297B802B4C /* Pods-Drive-Route-Demo-swift2.debug.xcconfig */,
+				F54347D76D2B40D12C691A04 /* Pods-Drive-Route-Demo-swift2.release.xcconfig */,
+				EDEB2030798B72705E47EAF5 /* Pods-Drive-Route-Demo-swift.debug.xcconfig */,
+				C741EF3B1D7F53B8A342C3A5 /* Pods-Drive-Route-Demo-swift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -466,6 +560,8 @@
 			isa = PBXGroup;
 			children = (
 				5F79F8BF740FB821C38BFB29 /* libPods-Drive-Route-Demo.a */,
+				8AF3331AC79BE67C965338FB /* libPods-Drive-Route-Demo-swift.a */,
+				5196091B92BBDA9E9E200FF6 /* libPods-Drive-Route-Demo-swift2.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -497,9 +593,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9E53D4C1E09395A00635107 /* Build configuration list for PBXNativeTarget "Drive-Route-Demo-swift" */;
 			buildPhases = (
+				649404A3F3CCF87F8FAAD0F3 /* [CP] Check Pods Manifest.lock */,
 				D9E53D391E09395A00635107 /* Sources */,
 				D9E53D3A1E09395A00635107 /* Frameworks */,
 				D9E53D3B1E09395A00635107 /* Resources */,
+				70250BFDFFAF484AE559D2A8 /* [CP] Embed Pods Frameworks */,
+				DD3A5E8B55C957E536AAD4CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -646,6 +745,81 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93FC5321E0AD46600A61D8F /* icon-72.png in Resources */,
+				D93FC5331E0AD46600A61D8F /* icon-72@2x.png in Resources */,
+				D93FC5341E0AD46600A61D8F /* icon.png in Resources */,
+				D93FC5351E0AD46600A61D8F /* icon@2x.png in Resources */,
+				D93FC5361E0AD46600A61D8F /* busRoute@2x.png in Resources */,
+				D93FC5371E0AD46600A61D8F /* busRoute@3x.png in Resources */,
+				D93FC5381E0AD46600A61D8F /* dottedStraight@2x.png in Resources */,
+				D93FC5391E0AD46600A61D8F /* dottedStraight@3x.png in Resources */,
+				D93FC53A1E0AD46600A61D8F /* downStairs@2x.png in Resources */,
+				D93FC53B1E0AD46600A61D8F /* downStairs@3x.png in Resources */,
+				D93FC53C1E0AD46600A61D8F /* end@2x.png in Resources */,
+				D93FC53D1E0AD46600A61D8F /* end@3x.png in Resources */,
+				D93FC53E1E0AD46600A61D8F /* left@2x.png in Resources */,
+				D93FC53F1E0AD46600A61D8F /* left@3x.png in Resources */,
+				D93FC5401E0AD46600A61D8F /* leftFront@2x.png in Resources */,
+				D93FC5411E0AD46600A61D8F /* leftFront@3x.png in Resources */,
+				D93FC5421E0AD46600A61D8F /* leftRear@2x.png in Resources */,
+				D93FC5431E0AD46600A61D8F /* leftRear@3x.png in Resources */,
+				D93FC5441E0AD46600A61D8F /* lift@2x.png in Resources */,
+				D93FC5451E0AD46600A61D8F /* lift@3x.png in Resources */,
+				D93FC5461E0AD46600A61D8F /* pavement@2x.png in Resources */,
+				D93FC5471E0AD46600A61D8F /* pavement@3x.png in Resources */,
+				D93FC5481E0AD46600A61D8F /* point@2x.png in Resources */,
+				D93FC5491E0AD46600A61D8F /* point@3x.png in Resources */,
+				D93FC54A1E0AD46600A61D8F /* right@2x.png in Resources */,
+				D93FC54B1E0AD46600A61D8F /* right@3x.png in Resources */,
+				D93FC54C1E0AD46600A61D8F /* rightFront@2x.png in Resources */,
+				D93FC54D1E0AD46600A61D8F /* rightFront@3x.png in Resources */,
+				D93FC54E1E0AD46600A61D8F /* rightRear@2x.png in Resources */,
+				D93FC54F1E0AD46600A61D8F /* rightRear@3x.png in Resources */,
+				D93FC5501E0AD46600A61D8F /* start@2x.png in Resources */,
+				D93FC5511E0AD46600A61D8F /* start@3x.png in Resources */,
+				D93FC5521E0AD46600A61D8F /* straight@2x.png in Resources */,
+				D93FC5531E0AD46600A61D8F /* straight@3x.png in Resources */,
+				D93FC5541E0AD46600A61D8F /* underGround@2x.png in Resources */,
+				D93FC5551E0AD46600A61D8F /* underGround@3x.png in Resources */,
+				D93FC5561E0AD46600A61D8F /* upStairs@2x.png in Resources */,
+				D93FC5571E0AD46600A61D8F /* upStairs@3x.png in Resources */,
+				D93FC5581E0AD46600A61D8F /* walkRoute@2x.png in Resources */,
+				D93FC5591E0AD46600A61D8F /* walkRoute@3x.png in Resources */,
+				D93FC55A1E0AD46600A61D8F /* arrow_right.png in Resources */,
+				D93FC55B1E0AD46600A61D8F /* arrow_right@2x.png in Resources */,
+				D93FC55C1E0AD46600A61D8F /* public_button_back@2x.png in Resources */,
+				D93FC55D1E0AD46600A61D8F /* public_button_back@3x.png in Resources */,
+				D93FC55E1E0AD46600A61D8F /* arrowTexture.png in Resources */,
+				D93FC55F1E0AD46600A61D8F /* bus@2x.png in Resources */,
+				D93FC5601E0AD46600A61D8F /* car@2x.png in Resources */,
+				D93FC5611E0AD46600A61D8F /* compass@2x.png in Resources */,
+				D93FC5621E0AD46600A61D8F /* custtexture.png in Resources */,
+				D93FC5631E0AD46600A61D8F /* custtexture_bad.png in Resources */,
+				D93FC5641E0AD46600A61D8F /* custtexture_green.png in Resources */,
+				D93FC5651E0AD46600A61D8F /* custtexture_slow.png in Resources */,
+				D93FC5661E0AD46600A61D8F /* decrease@2x.png in Resources */,
+				D93FC5671E0AD46600A61D8F /* delete@3x.png in Resources */,
+				D93FC5681E0AD46600A61D8F /* download@3x.png in Resources */,
+				D93FC5691E0AD46600A61D8F /* endPoint.png in Resources */,
+				D93FC56A1E0AD46600A61D8F /* endPoint@2x.png in Resources */,
+				D93FC56B1E0AD46600A61D8F /* gpsStat1@2x.png in Resources */,
+				D93FC56C1E0AD46600A61D8F /* gpsStat2@2x.png in Resources */,
+				D93FC56D1E0AD46600A61D8F /* GWF.png in Resources */,
+				D93FC56E1E0AD46600A61D8F /* hema.png in Resources */,
+				D93FC56F1E0AD46600A61D8F /* increase@2x.png in Resources */,
+				D93FC5701E0AD46600A61D8F /* locate@2x.png in Resources */,
+				D93FC5711E0AD46600A61D8F /* man@2x.png in Resources */,
+				D93FC5721E0AD46600A61D8F /* navi@2x.png in Resources */,
+				D93FC5731E0AD46600A61D8F /* naviBackgroundHighlighted.png in Resources */,
+				D93FC5741E0AD46600A61D8F /* naviBackgroundNormal.png in Resources */,
+				D93FC5751E0AD46600A61D8F /* pause@3x.png in Resources */,
+				D93FC5761E0AD46600A61D8F /* railway_station@2x.png in Resources */,
+				D93FC5771E0AD46600A61D8F /* ride@2x.png in Resources */,
+				D93FC5781E0AD46600A61D8F /* search@2x.png in Resources */,
+				D93FC5791E0AD46600A61D8F /* startPoint.png in Resources */,
+				D93FC57A1E0AD46600A61D8F /* startPoint@2x.png in Resources */,
+				D93FC57B1E0AD46600A61D8F /* userPosition.png in Resources */,
+				D93FC57C1E0AD46600A61D8F /* userPosition@2x.png in Resources */,
 				D9E53D4A1E09395A00635107 /* LaunchScreen.storyboard in Resources */,
 				D9E53D471E09395A00635107 /* Assets.xcassets in Resources */,
 				D9E53D451E09395A00635107 /* Main.storyboard in Resources */,
@@ -668,6 +842,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drive-Route-Demo/Pods-Drive-Route-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		649404A3F3CCF87F8FAAD0F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70250BFDFFAF484AE559D2A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drive-Route-Demo-swift/Pods-Drive-Route-Demo-swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		725C5610E9A46DCA2F29659C /* [CP] Copy Pods Resources */ = {
@@ -700,6 +904,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		DD3A5E8B55C957E536AAD4CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drive-Route-Demo-swift/Pods-Drive-Route-Demo-swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -724,7 +943,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9E53D421E09395A00635107 /* ViewController.swift in Sources */,
+				D9F282291E0AA30200288CEA /* LineDashPolyline.m in Sources */,
+				D9F2822A1E0AA30200288CEA /* MANaviAnnotation.m in Sources */,
+				D9F2822B1E0AA30200288CEA /* MANaviPolyline.m in Sources */,
+				D9F282271E0AA2C400288CEA /* MANaviRoute.m in Sources */,
+				D9F282281E0AA2C400288CEA /* CommonUtility.m in Sources */,
+				D93FC5151E0AABE200A61D8F /* RootViewController.swift in Sources */,
 				D9E53D401E09395A00635107 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -890,6 +1114,7 @@
 		};
 		D9E53D4D1E09395A00635107 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDEB2030798B72705E47EAF5 /* Pods-Drive-Route-Demo-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -902,6 +1127,7 @@
 				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
 				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "./Drive-Route-Demo-swift/Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -909,6 +1135,7 @@
 		};
 		D9E53D4E1E09395A00635107 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C741EF3B1D7F53B8A342C3A5 /* Pods-Drive-Route-Demo-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -921,6 +1148,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
 				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				SWIFT_OBJC_BRIDGING_HEADER = "./Drive-Route-Demo-swift/Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
@@ -954,6 +1182,7 @@
 				D9E53D4E1E09395A00635107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
