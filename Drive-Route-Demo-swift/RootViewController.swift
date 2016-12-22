@@ -284,7 +284,10 @@ class RootViewController: UIViewController, MAMapViewDelegate, AMapSearchDelegat
     
     //路线详情按钮点击
     @IBAction func goToRouteDetail(_ sender: Any) {
-        
+        let routePathDetailViewController = RoutePathDetailViewController(nibName: "RoutePathDetailViewController", bundle: nil)
+        routePathDetailViewController.route = self.route
+        routePathDetailViewController.path = self.route.paths[self.currentRouteIndex]
+        self.navigationController!.pushViewController(routePathDetailViewController, animated: true)
     }
 
 

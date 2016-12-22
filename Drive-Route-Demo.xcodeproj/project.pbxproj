@@ -178,6 +178,10 @@
 		D93FC57A1E0AD46600A61D8F /* startPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A35D1DEBE89400EA75E9 /* startPoint@2x.png */; };
 		D93FC57B1E0AD46600A61D8F /* userPosition.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A35E1DEBE89400EA75E9 /* userPosition.png */; };
 		D93FC57C1E0AD46600A61D8F /* userPosition@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D923A35F1DEBE89400EA75E9 /* userPosition@2x.png */; };
+		D93FC57F1E0B76A800A61D8F /* RoutePathDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FC57D1E0B76A800A61D8F /* RoutePathDetailViewController.swift */; };
+		D93FC5801E0B76A800A61D8F /* RoutePathDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93FC57E1E0B76A800A61D8F /* RoutePathDetailViewController.xib */; };
+		D93FC5831E0B78A900A61D8F /* RoutePathDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FC5811E0B78A900A61D8F /* RoutePathDetailTableViewCell.swift */; };
+		D93FC5841E0B78A900A61D8F /* RoutePathDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93FC5821E0B78A900A61D8F /* RoutePathDetailTableViewCell.xib */; };
 		D9E53D401E09395A00635107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E53D3F1E09395A00635107 /* AppDelegate.swift */; };
 		D9E53D451E09395A00635107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E53D431E09395A00635107 /* Main.storyboard */; };
 		D9E53D471E09395A00635107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E53D461E09395A00635107 /* Assets.xcassets */; };
@@ -302,6 +306,10 @@
 		D93399081DE86210005EFBEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D933990E1DE8641D005EFBEB /* APIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
 		D93FC5141E0AABE200A61D8F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		D93FC57D1E0B76A800A61D8F /* RoutePathDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePathDetailViewController.swift; sourceTree = "<group>"; };
+		D93FC57E1E0B76A800A61D8F /* RoutePathDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoutePathDetailViewController.xib; sourceTree = "<group>"; };
+		D93FC5811E0B78A900A61D8F /* RoutePathDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePathDetailTableViewCell.swift; sourceTree = "<group>"; };
+		D93FC5821E0B78A900A61D8F /* RoutePathDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoutePathDetailTableViewCell.xib; sourceTree = "<group>"; };
 		D9E53D3D1E09395A00635107 /* Drive-Route-Demo-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drive-Route-Demo-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E53D3F1E09395A00635107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9E53D441E09395A00635107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -535,6 +543,10 @@
 				D9E53D3F1E09395A00635107 /* AppDelegate.swift */,
 				D93FC5141E0AABE200A61D8F /* RootViewController.swift */,
 				D9F282211E0A73F300288CEA /* Swift-Bridging-Header.h */,
+				D93FC57D1E0B76A800A61D8F /* RoutePathDetailViewController.swift */,
+				D93FC57E1E0B76A800A61D8F /* RoutePathDetailViewController.xib */,
+				D93FC5811E0B78A900A61D8F /* RoutePathDetailTableViewCell.swift */,
+				D93FC5821E0B78A900A61D8F /* RoutePathDetailTableViewCell.xib */,
 				D9E53D431E09395A00635107 /* Main.storyboard */,
 				D9E53D461E09395A00635107 /* Assets.xcassets */,
 				D9E53D481E09395A00635107 /* LaunchScreen.storyboard */,
@@ -767,6 +779,7 @@
 				D93FC5451E0AD46600A61D8F /* lift@3x.png in Resources */,
 				D93FC5461E0AD46600A61D8F /* pavement@2x.png in Resources */,
 				D93FC5471E0AD46600A61D8F /* pavement@3x.png in Resources */,
+				D93FC5841E0B78A900A61D8F /* RoutePathDetailTableViewCell.xib in Resources */,
 				D93FC5481E0AD46600A61D8F /* point@2x.png in Resources */,
 				D93FC5491E0AD46600A61D8F /* point@3x.png in Resources */,
 				D93FC54A1E0AD46600A61D8F /* right@2x.png in Resources */,
@@ -795,6 +808,7 @@
 				D93FC5611E0AD46600A61D8F /* compass@2x.png in Resources */,
 				D93FC5621E0AD46600A61D8F /* custtexture.png in Resources */,
 				D93FC5631E0AD46600A61D8F /* custtexture_bad.png in Resources */,
+				D93FC5801E0B76A800A61D8F /* RoutePathDetailViewController.xib in Resources */,
 				D93FC5641E0AD46600A61D8F /* custtexture_green.png in Resources */,
 				D93FC5651E0AD46600A61D8F /* custtexture_slow.png in Resources */,
 				D93FC5661E0AD46600A61D8F /* decrease@2x.png in Resources */,
@@ -945,8 +959,10 @@
 			files = (
 				D9F282291E0AA30200288CEA /* LineDashPolyline.m in Sources */,
 				D9F2822A1E0AA30200288CEA /* MANaviAnnotation.m in Sources */,
+				D93FC5831E0B78A900A61D8F /* RoutePathDetailTableViewCell.swift in Sources */,
 				D9F2822B1E0AA30200288CEA /* MANaviPolyline.m in Sources */,
 				D9F282271E0AA2C400288CEA /* MANaviRoute.m in Sources */,
+				D93FC57F1E0B76A800A61D8F /* RoutePathDetailViewController.swift in Sources */,
 				D9F282281E0AA2C400288CEA /* CommonUtility.m in Sources */,
 				D93FC5151E0AABE200A61D8F /* RootViewController.swift in Sources */,
 				D9E53D401E09395A00635107 /* AppDelegate.swift in Sources */,
