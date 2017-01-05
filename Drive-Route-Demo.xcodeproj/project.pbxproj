@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A2D0F3D1E1D090C0036ACED /* Drive_Route_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D0F3C1E1D090C0036ACED /* Drive_Route_DemoUITests.m */; };
-		6F11D2A069BC6ABC85984018 /* libPods-Drive-Route-Demo-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF3331AC79BE67C965338FB /* libPods-Drive-Route-Demo-swift.a */; };
+		73B1F9C6A4F37A29A61321F6 /* libPods-Drive-Route-Demo-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD1097260B855FFCE4766F5 /* libPods-Drive-Route-Demo-swift.a */; };
 		793F596817D089C410EE0AAE /* libPods-Drive-Route-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F79F8BF740FB821C38BFB29 /* libPods-Drive-Route-Demo.a */; };
 		D9239EDB1DEBE01700EA75E9 /* LineDashPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = D9239ED41DEBE01700EA75E9 /* LineDashPolyline.m */; };
 		D9239EDC1DEBE01700EA75E9 /* MANaviAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D9239ED61DEBE01700EA75E9 /* MANaviAnnotation.m */; };
@@ -205,13 +205,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5196091B92BBDA9E9E200FF6 /* libPods-Drive-Route-Demo-swift2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drive-Route-Demo-swift2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F79F8BF740FB821C38BFB29 /* libPods-Drive-Route-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drive-Route-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D0F3A1E1D090B0036ACED /* Drive-Route-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drive-Route-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D0F3C1E1D090C0036ACED /* Drive_Route_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Drive_Route_DemoUITests.m; sourceTree = "<group>"; };
 		6A2D0F3E1E1D090C0036ACED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8655CF55D8948F5D0655B6C4 /* Pods-Drive-Route-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo/Pods-Drive-Route-Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		8AF3331AC79BE67C965338FB /* libPods-Drive-Route-Demo-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drive-Route-Demo-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD1097260B855FFCE4766F5 /* libPods-Drive-Route-Demo-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drive-Route-Demo-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C741EF3B1D7F53B8A342C3A5 /* Pods-Drive-Route-Demo-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo-swift/Pods-Drive-Route-Demo-swift.release.xcconfig"; sourceTree = "<group>"; };
 		D8BDD9E8B6FE7A9134F9364F /* Pods-Drive-Route-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo/Pods-Drive-Route-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		D9239ED31DEBE01700EA75E9 /* LineDashPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineDashPolyline.h; sourceTree = "<group>"; };
@@ -331,9 +330,7 @@
 		D9E53D491E09395A00635107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9E53D4B1E09395A00635107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9F282211E0A73F300288CEA /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		E70F30D7FC1699297B802B4C /* Pods-Drive-Route-Demo-swift2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo-swift2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo-swift2/Pods-Drive-Route-Demo-swift2.debug.xcconfig"; sourceTree = "<group>"; };
 		EDEB2030798B72705E47EAF5 /* Pods-Drive-Route-Demo-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo-swift/Pods-Drive-Route-Demo-swift.debug.xcconfig"; sourceTree = "<group>"; };
-		F54347D76D2B40D12C691A04 /* Pods-Drive-Route-Demo-swift2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drive-Route-Demo-swift2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drive-Route-Demo-swift2/Pods-Drive-Route-Demo-swift2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,7 +353,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F11D2A069BC6ABC85984018 /* libPods-Drive-Route-Demo-swift.a in Frameworks */,
+				73B1F9C6A4F37A29A61321F6 /* libPods-Drive-Route-Demo-swift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,8 +589,6 @@
 			children = (
 				8655CF55D8948F5D0655B6C4 /* Pods-Drive-Route-Demo.debug.xcconfig */,
 				D8BDD9E8B6FE7A9134F9364F /* Pods-Drive-Route-Demo.release.xcconfig */,
-				E70F30D7FC1699297B802B4C /* Pods-Drive-Route-Demo-swift2.debug.xcconfig */,
-				F54347D76D2B40D12C691A04 /* Pods-Drive-Route-Demo-swift2.release.xcconfig */,
 				EDEB2030798B72705E47EAF5 /* Pods-Drive-Route-Demo-swift.debug.xcconfig */,
 				C741EF3B1D7F53B8A342C3A5 /* Pods-Drive-Route-Demo-swift.release.xcconfig */,
 			);
@@ -604,8 +599,7 @@
 			isa = PBXGroup;
 			children = (
 				5F79F8BF740FB821C38BFB29 /* libPods-Drive-Route-Demo.a */,
-				8AF3331AC79BE67C965338FB /* libPods-Drive-Route-Demo-swift.a */,
-				5196091B92BBDA9E9E200FF6 /* libPods-Drive-Route-Demo-swift2.a */,
+				ADD1097260B855FFCE4766F5 /* libPods-Drive-Route-Demo-swift.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1292,6 +1286,7 @@
 				6A2D0F421E1D090C0036ACED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D93398EF1DE86210005EFBEB /* Build configuration list for PBXProject "Drive-Route-Demo" */ = {
 			isa = XCConfigurationList;
