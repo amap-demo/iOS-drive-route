@@ -62,7 +62,7 @@ class RoutePathDetailViewController: UIViewController, UITableViewDataSource, UI
         self.routeDetailDataArray.addObjects(from: self.path.steps)
         self.routeDetailDataArray.add(endStep)
         
-        self.tableView.tableHeaderView? = self.headerView
+        self.tableView.tableHeaderView = self.headerView
         self.tableView.register(UINib(nibName: "RoutePathDetailTableViewCell", bundle: nil), forCellReuseIdentifier: RoutePathDetailTableViewCellIdentifier)
         self.tableView.rowHeight = 54
         
