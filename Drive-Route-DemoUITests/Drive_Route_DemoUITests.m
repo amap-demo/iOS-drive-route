@@ -38,6 +38,9 @@
     
     
     XCUIApplication *app = [[XCUIApplication alloc] init];
+    
+    sleep(2);
+    
     [app.switches[@"1"] tap];
     
     sleep(1);
@@ -47,8 +50,10 @@
     XCUIElement *button = app.buttons[@"\u4e0b\u4e00\u8def\u7ebf"];
     [button tap];
     sleep(1);
+    
     [button tap];
     sleep(1);
+    
     [app.buttons[@"\u8def\u7ebf\u8be6\u60c5"] tap];
     
     XCUIElement *tablesQuery = app.tables.element;
