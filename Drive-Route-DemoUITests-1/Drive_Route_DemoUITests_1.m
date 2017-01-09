@@ -1,18 +1,18 @@
 //
-//  Drive_Route_DemoUITests.m
-//  Drive-Route-DemoUITests
+//  Drive_Route_DemoUITests_1.m
+//  Drive-Route-DemoUITests-1
 //
-//  Created by hanxiaoming on 17/1/4.
+//  Created by eidan on 17/1/9.
 //  Copyright © 2017年 autonavi. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface Drive_Route_DemoUITests : XCTestCase
+@interface Drive_Route_DemoUITests_1 : XCTestCase
 
 @end
 
-@implementation Drive_Route_DemoUITests
+@implementation Drive_Route_DemoUITests_1
 
 - (void)setUp {
     [super setUp];
@@ -33,19 +33,15 @@
 }
 
 - (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-    
-    
     XCUIApplication *app = [[XCUIApplication alloc] init];
     
     sleep(2);
     
-//    [app.switches[@"1"] tap];
-//    
-//    sleep(1);
-//    
-//    [app.switches[@"0"] tap];
+    [app.switches[@"1"] tap];
+    
+    sleep(1);
+    
+    [app.switches[@"0"] tap];
     
     XCUIElement *button = app.buttons[@"\u4e0b\u4e00\u8def\u7ebf"];
     [button tap];
@@ -69,8 +65,6 @@
         [e fulfill];
     });
     [self waitForExpectationsWithTimeout:5 handler:nil];
-
-    
 }
 
 @end

@@ -16,9 +16,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6A2D0F391E1D090B0036ACED"
-               BuildableName = "Drive-Route-DemoUITests.xctest"
-               BlueprintName = "Drive-Route-DemoUITests"
+               BlueprintIdentifier = "D98F9C021E23BEB30040F730"
+               BuildableName = "Drive-Route-DemoUITests-1.xctest"
+               BlueprintName = "Drive-Route-DemoUITests-1"
                ReferencedContainer = "container:Drive-Route-Demo.xcodeproj">
             </BuildableReference>
          </TestableReference>

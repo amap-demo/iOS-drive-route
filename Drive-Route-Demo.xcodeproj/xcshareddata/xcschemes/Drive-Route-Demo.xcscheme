@@ -38,6 +38,16 @@
                ReferencedContainer = "container:Drive-Route-Demo.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D98F9C021E23BEB30040F730"
+               BuildableName = "Drive-Route-DemoUITests-1.xctest"
+               BlueprintName = "Drive-Route-DemoUITests-1"
+               ReferencedContainer = "container:Drive-Route-Demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
