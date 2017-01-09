@@ -182,7 +182,7 @@
 		D93FC5801E0B76A800A61D8F /* RoutePathDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93FC57E1E0B76A800A61D8F /* RoutePathDetailViewController.xib */; };
 		D93FC5831E0B78A900A61D8F /* RoutePathDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FC5811E0B78A900A61D8F /* RoutePathDetailTableViewCell.swift */; };
 		D93FC5841E0B78A900A61D8F /* RoutePathDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93FC5821E0B78A900A61D8F /* RoutePathDetailTableViewCell.xib */; };
-		D98F9C061E23BEB30040F730 /* Drive_Route_DemoUITests_1.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F9C051E23BEB30040F730 /* Drive_Route_DemoUITests_1.m */; };
+		D98F9C141E23C06C0040F730 /* Drive_Route_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F9C131E23C06C0040F730 /* Drive_Route_DemoUITests.m */; };
 		D9E53D401E09395A00635107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E53D3F1E09395A00635107 /* AppDelegate.swift */; };
 		D9E53D451E09395A00635107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E53D431E09395A00635107 /* Main.storyboard */; };
 		D9E53D471E09395A00635107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E53D461E09395A00635107 /* Assets.xcassets */; };
@@ -195,7 +195,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D98F9C081E23BEB30040F730 /* PBXContainerItemProxy */ = {
+		D98F9C161E23C06C0040F730 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D93398EC1DE86210005EFBEB /* Project object */;
 			proxyType = 1;
@@ -320,9 +320,9 @@
 		D93FC57E1E0B76A800A61D8F /* RoutePathDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoutePathDetailViewController.xib; sourceTree = "<group>"; };
 		D93FC5811E0B78A900A61D8F /* RoutePathDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePathDetailTableViewCell.swift; sourceTree = "<group>"; };
 		D93FC5821E0B78A900A61D8F /* RoutePathDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoutePathDetailTableViewCell.xib; sourceTree = "<group>"; };
-		D98F9C031E23BEB30040F730 /* Drive-Route-DemoUITests-1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drive-Route-DemoUITests-1.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D98F9C051E23BEB30040F730 /* Drive_Route_DemoUITests_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Drive_Route_DemoUITests_1.m; sourceTree = "<group>"; };
-		D98F9C071E23BEB30040F730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98F9C111E23C06C0040F730 /* Drive-Route-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drive-Route-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98F9C131E23C06C0040F730 /* Drive_Route_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Drive_Route_DemoUITests.m; sourceTree = "<group>"; };
+		D98F9C151E23C06C0040F730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9E53D3D1E09395A00635107 /* Drive-Route-Demo-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drive-Route-Demo-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E53D3F1E09395A00635107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9E53D441E09395A00635107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -342,7 +342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D98F9C001E23BEB30040F730 /* Frameworks */ = {
+		D98F9C0E1E23C06C0040F730 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -505,7 +505,7 @@
 			children = (
 				D93398F61DE86210005EFBEB /* Drive-Route-Demo */,
 				D9E53D3E1E09395A00635107 /* Drive-Route-Demo-swift */,
-				D98F9C041E23BEB30040F730 /* Drive-Route-DemoUITests-1 */,
+				D98F9C121E23C06C0040F730 /* Drive-Route-DemoUITests */,
 				D93398F51DE86210005EFBEB /* Products */,
 				D923A5611DED1FA300EA75E9 /* ScreenShots */,
 				F49FEE8046A26E44821AAF2D /* Frameworks */,
@@ -518,7 +518,7 @@
 			children = (
 				D93398F41DE86210005EFBEB /* Drive-Route-Demo.app */,
 				D9E53D3D1E09395A00635107 /* Drive-Route-Demo-swift.app */,
-				D98F9C031E23BEB30040F730 /* Drive-Route-DemoUITests-1.xctest */,
+				D98F9C111E23C06C0040F730 /* Drive-Route-DemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -557,13 +557,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D98F9C041E23BEB30040F730 /* Drive-Route-DemoUITests-1 */ = {
+		D98F9C121E23C06C0040F730 /* Drive-Route-DemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D98F9C051E23BEB30040F730 /* Drive_Route_DemoUITests_1.m */,
-				D98F9C071E23BEB30040F730 /* Info.plist */,
+				D98F9C131E23C06C0040F730 /* Drive_Route_DemoUITests.m */,
+				D98F9C151E23C06C0040F730 /* Info.plist */,
 			);
-			path = "Drive-Route-DemoUITests-1";
+			path = "Drive-Route-DemoUITests";
 			sourceTree = "<group>";
 		};
 		D9E53D3E1E09395A00635107 /* Drive-Route-Demo-swift */ = {
@@ -627,22 +627,22 @@
 			productReference = D93398F41DE86210005EFBEB /* Drive-Route-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D98F9C021E23BEB30040F730 /* Drive-Route-DemoUITests-1 */ = {
+		D98F9C101E23C06C0040F730 /* Drive-Route-DemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D98F9C0C1E23BEB30040F730 /* Build configuration list for PBXNativeTarget "Drive-Route-DemoUITests-1" */;
+			buildConfigurationList = D98F9C181E23C06C0040F730 /* Build configuration list for PBXNativeTarget "Drive-Route-DemoUITests" */;
 			buildPhases = (
-				D98F9BFF1E23BEB30040F730 /* Sources */,
-				D98F9C001E23BEB30040F730 /* Frameworks */,
-				D98F9C011E23BEB30040F730 /* Resources */,
+				D98F9C0D1E23C06C0040F730 /* Sources */,
+				D98F9C0E1E23C06C0040F730 /* Frameworks */,
+				D98F9C0F1E23C06C0040F730 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D98F9C091E23BEB30040F730 /* PBXTargetDependency */,
+				D98F9C171E23C06C0040F730 /* PBXTargetDependency */,
 			);
-			name = "Drive-Route-DemoUITests-1";
-			productName = "Drive-Route-DemoUITests-1";
-			productReference = D98F9C031E23BEB30040F730 /* Drive-Route-DemoUITests-1.xctest */;
+			name = "Drive-Route-DemoUITests";
+			productName = "Drive-Route-DemoUITests";
+			productReference = D98F9C111E23C06C0040F730 /* Drive-Route-DemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		D9E53D3C1E09395A00635107 /* Drive-Route-Demo-swift */ = {
@@ -680,7 +680,7 @@
 						DevelopmentTeam = YMJ372W38W;
 						ProvisioningStyle = Manual;
 					};
-					D98F9C021E23BEB30040F730 = {
+					D98F9C101E23C06C0040F730 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = YMJ372W38W;
 						ProvisioningStyle = Manual;
@@ -708,7 +708,7 @@
 			targets = (
 				D93398F31DE86210005EFBEB /* Drive-Route-Demo */,
 				D9E53D3C1E09395A00635107 /* Drive-Route-Demo-swift */,
-				D98F9C021E23BEB30040F730 /* Drive-Route-DemoUITests-1 */,
+				D98F9C101E23C06C0040F730 /* Drive-Route-DemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -804,7 +804,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D98F9C011E23BEB30040F730 /* Resources */ = {
+		D98F9C0F1E23C06C0040F730 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1011,11 +1011,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D98F9BFF1E23BEB30040F730 /* Sources */ = {
+		D98F9C0D1E23C06C0040F730 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98F9C061E23BEB30040F730 /* Drive_Route_DemoUITests_1.m in Sources */,
+				D98F9C141E23C06C0040F730 /* Drive_Route_DemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1038,10 +1038,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D98F9C091E23BEB30040F730 /* PBXTargetDependency */ = {
+		D98F9C171E23C06C0040F730 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D93398F31DE86210005EFBEB /* Drive-Route-Demo */;
-			targetProxy = D98F9C081E23BEB30040F730 /* PBXContainerItemProxy */;
+			targetProxy = D98F9C161E23C06C0040F730 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1202,15 +1202,15 @@
 			};
 			name = Release;
 		};
-		D98F9C0A1E23BEB30040F730 /* Debug */ = {
+		D98F9C191E23C06C0040F730 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEVELOPMENT_TEAM = YMJ372W38W;
-				INFOPLIST_FILE = "Drive-Route-DemoUITests-1/Info.plist";
+				INFOPLIST_FILE = "Drive-Route-DemoUITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.Drive-Route-DemoUITests-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.Drive-Route-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
 				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
@@ -1218,15 +1218,15 @@
 			};
 			name = Debug;
 		};
-		D98F9C0B1E23BEB30040F730 /* Release */ = {
+		D98F9C1A1E23C06C0040F730 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEVELOPMENT_TEAM = YMJ372W38W;
-				INFOPLIST_FILE = "Drive-Route-DemoUITests-1/Info.plist";
+				INFOPLIST_FILE = "Drive-Route-DemoUITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.Drive-Route-DemoUITests-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.Drive-Route-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
 				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
@@ -1297,11 +1297,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D98F9C0C1E23BEB30040F730 /* Build configuration list for PBXNativeTarget "Drive-Route-DemoUITests-1" */ = {
+		D98F9C181E23C06C0040F730 /* Build configuration list for PBXNativeTarget "Drive-Route-DemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D98F9C0A1E23BEB30040F730 /* Debug */,
-				D98F9C0B1E23BEB30040F730 /* Release */,
+				D98F9C191E23C06C0040F730 /* Debug */,
+				D98F9C1A1E23C06C0040F730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

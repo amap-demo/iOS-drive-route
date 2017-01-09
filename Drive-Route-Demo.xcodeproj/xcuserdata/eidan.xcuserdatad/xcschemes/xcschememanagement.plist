@@ -19,7 +19,7 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Drive-Route-DemoUITests-1.xcscheme_^#shared#^_</key>
+		<key>Drive-Route-DemoUITests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
@@ -43,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>D98F9C021E23BEB30040F730</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D98F9C101E23C06C0040F730</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,6 +1,6 @@
 //
-//  Drive_Route_DemoUITests_1.m
-//  Drive-Route-DemoUITests-1
+//  Drive_Route_DemoUITests.m
+//  Drive-Route-DemoUITests
 //
 //  Created by eidan on 17/1/9.
 //  Copyright © 2017年 autonavi. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface Drive_Route_DemoUITests_1 : XCTestCase
+@interface Drive_Route_DemoUITests : XCTestCase
 
 @end
 
-@implementation Drive_Route_DemoUITests_1
+@implementation Drive_Route_DemoUITests
 
 - (void)setUp {
     [super setUp];
@@ -33,6 +33,7 @@
 }
 
 - (void)testExample {
+    
     XCUIApplication *app = [[XCUIApplication alloc] init];
     
     sleep(2);
