@@ -41,11 +41,11 @@
     
     sleep(2);
     
-    [app.switches[@"1"] tap];
-    
-    sleep(1);
-    
-    [app.switches[@"0"] tap];
+//    [app.switches[@"1"] tap];
+//    
+//    sleep(1);
+//    
+//    [app.switches[@"0"] tap];
     
     XCUIElement *button = app.buttons[@"\u4e0b\u4e00\u8def\u7ebf"];
     [button tap];
