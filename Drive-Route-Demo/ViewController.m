@@ -175,7 +175,7 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
     //缩放地图使其适应polylines的展示
     [self.mapView setVisibleMapRect:[CommonUtility mapRectForOverlays:self.naviRoute.routePolylines]
                         edgePadding:edgePaddingRect
-                           animated:YES];
+                           animated:NO];
 }
 
 #pragma mark - MAMapViewDelegate
