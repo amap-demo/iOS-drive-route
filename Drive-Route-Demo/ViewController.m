@@ -63,10 +63,11 @@ static const NSString *RoutePlanningViewControllerDestinationTitle = @"终点";
 
 //初始化地图,和搜索API
 - (void)initMapViewAndSearch {
-    self.mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 45 - 64)];
+    self.mapView = [[MAMapView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.mapView.delegate = self;
     [self.view addSubview:self.mapView];
+    [self.view sendSubviewToBack:self.mapView];
     
     self.search = [[AMapSearchAPI alloc] init];
     self.search.delegate = self;
