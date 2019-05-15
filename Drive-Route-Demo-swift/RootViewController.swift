@@ -52,10 +52,11 @@ class RootViewController: UIViewController, MAMapViewDelegate, AMapSearchDelegat
     
     //初始化地图,和搜索API
     func initMapViewAndSearch() {
-        self.mapView = MAMapView(frame: CGRect(x: CGFloat(0), y: CGFloat(64), width: CGFloat(self.view.bounds.size.width), height: CGFloat(self.view.bounds.size.height - 45 - 64)))
+        self.mapView = MAMapView(frame: UIScreen.main.bounds)
         self.mapView.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         self.mapView.delegate = self
         self.view.addSubview(self.mapView)
+        self.view.sendSubview(toBack:self.mapView)
         self.search = AMapSearchAPI()
         self.search.delegate = self
     }
